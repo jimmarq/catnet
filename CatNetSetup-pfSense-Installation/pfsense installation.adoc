@@ -1,0 +1,40 @@
+= pfSense Installation Instructions
+Dr. Jim Marquardson, Northern Michigan University <jimarqua@nmu.edu>
+v1.0, 2019-11-12
+
+
+Virtualbox > New > FreeBSD 64-bit
+Virtualbox > Networks
+	Adapter 1: NAT
+	Adapter 2: intnet
+Virtualbox > Storage > Attach CD
+Installation
+ - Boot the VM
+ - Accept all defaults
+ - When prompted to reboot, remove the CD
+	- Devices > Optical Drive > Remove disk from optical drive
+ - Reboot
+ 
+Configure pfSense
+ - Boot into the multi user
+ - Notice the IP address of WAN and LAN (em0 and em1)
+ - (Close all settings before the changes will take effect.)
+
+Boot Kali
+ - IP: 192.168.1.50/24, GW 192.168.1.1
+ - Browser: 192.168.1.1
+ - Accept security certificate warning
+ - Login: admin/pfsense
+ - Wizard 1: Next
+ - Wizard 2: General Information
+	- Hostname: firewall
+	- Domain: lastname.com (e.g. marquardson.com)
+	- Primary DNS Server: 8.8.8.8
+	- Secondary DNS Server: 8.8.4.4
+	- Override DNS: Keep checked
+ - Wizard 3: Time Server Information
+    - Time server hostname (keep default)
+	- Timezone: America/Detroit
+ - Wizard 4: Configure WAN Interface
+    - SelectedType: DHCP
+	- Uncheck "BockFFC1918 Private Networks"
