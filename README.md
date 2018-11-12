@@ -8,7 +8,7 @@ The lessons have been designed with flexibility in mind. To the extent possible 
 
 ## Lab Setup
 
-| *Lesson*        |* Description*     |
+| **Lesson**        | **Description**     |
 |-----------------|-------------------|
 |[Intro to Catnet](https://github.com/jimmarq/catnet/blob/master/Intro-1-Catnet/CatNet%20v2%20Overview.adoc)                 |                   | Describes how the lab is configured and the goals of the lessons.|
 |[VirtualBox Introduction](https://github.com/jimmarq/catnet/blob/master/Intro-2-VirtualBox-Setup/VirtualBox%20Introduction%20Instructions.adoc)                 |Installation, setup, and configuration of VirtualBox.                   |
@@ -18,7 +18,7 @@ The lessons have been designed with flexibility in mind. To the extent possible 
 
 ## Suggested Lesson Order
 
-| *Lesson*     | *Description* |
+| **Lesson**     | **Description** |
 |--------------|--------------|
 |[Text Editors in Linux](https://github.com/jimmarq/catnet/blob/master/Intro-3-Linux-Text-Editing/Linux%20Text%20Editors.adoc) | A basic overview of editing text in Linux. A major goal of this lesson is to confirm that CatBet is configured properly in VirtualBox.
 
